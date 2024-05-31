@@ -1,0 +1,7 @@
+{
+    "require": {
+        "ext-zip": "*",
+        "ext-gd": "*",
+        "ext-curl": "*"
+    }
+}
