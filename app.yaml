@@ -1,0 +1,6 @@
+kind: wasmer.io/App.v0
+name: popman1212-php-starter-fbf2
+owner: popman1212
+package: .
+scaling:
+  mode: single_concurrency
