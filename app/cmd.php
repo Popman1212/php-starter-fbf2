@@ -7,15 +7,9 @@ if (version_compare($phpVersion, '7.0.0', '<'))
 }
 
 $dir = __DIR__;
-require($dir . '/src/XF.php');
+require ($dir . '/src/XF.php');
 
 XF::start($dir);
 
-if (\XF::requestUrlMatchesApi())
-{
-	\XF::runApp('XF\Api\App');
-}
-else
-{
-	\XF::runApp('XF\Pub\App');
-}
+$runner = new \XF\Cli\Runner();
+$runner->run();

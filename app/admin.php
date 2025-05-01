@@ -10,12 +10,4 @@ $dir = __DIR__;
 require($dir . '/src/XF.php');
 
 XF::start($dir);
-
-if (\XF::requestUrlMatchesApi())
-{
-	\XF::runApp('XF\Api\App');
-}
-else
-{
-	\XF::runApp('XF\Pub\App');
-}
+XF::runApp('XF\Admin\App');
