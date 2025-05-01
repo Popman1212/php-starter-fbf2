@@ -1,5 +1,8 @@
 [dependencies]
 "php/php" = "=8.3.4-rc.2"
+"stdlib/zip" = "0.1.0"
+"stdlib/gd" = "0.1.0"
+"stdlib/curl" = "0.1.0"
 
 [fs]
 "/app" = "app"
